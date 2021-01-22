@@ -31,12 +31,8 @@ from helper_funcs.display_progress import progress_for_pyrogram, humanbytes
 
 @pyrogram.Client.on_message(pyrogram.Filters.command(["unzip", "unzip@xploaderzxbot"]))
 async def unzip(bot, update):
-    if update.from_user.id not in Config.AUTH_USERS:
-        await bot.delete_messages(
-            chat_id=update.chat.id,
-            message_ids=update.message_id,
-            revoke=True
-        )
+    if update.from_user.id in Config.BANNED_USERS:
+        await update.reply_text("You are B A N N E D 🤣🤣🤣🤣")
         return
     TRChatBase(update.from_user.id, update.text, "unzip")
     saved_file_path = Config.DOWNLOAD_LOCATION + \

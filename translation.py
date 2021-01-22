@@ -51,7 +51,13 @@ You can download youtube videos by giving link. It will automatically download.
 Choose the quality u needed as in button
 
 •••
-Rename any file and reupload. EXAMPLE :- /rename file_name.extension
+Rename any file and reupload. EXAMPLE :- /rename file_name.extension.
+
+•••
+You can unzip any file and download files inside it directly.(Multiple downloads and Folder Download is not possible)
+
+•••
+You can generate screenshots of video(file type also) by replying /generatescss to file
 
 •••
 BUTTONS INFO :-
@@ -62,7 +68,7 @@ Video  - Give File as video without Screenshots
 DFile  - Give File without Screenshots
 
 •••
-Use /commands for all commands list
+Use /commands for all simple commands list
 
 ----------------------------------------------------
 Send /me to know current plan details

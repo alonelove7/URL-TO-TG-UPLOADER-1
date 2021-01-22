@@ -3,11 +3,14 @@
 
 An Open Source ALL-In-One Telegram RoBot, that can do lot of things.
 
+**Features**:
+
+This is a clone of Anydlbot
+
 **My Features**:
 
-👉 All Supported Video Formats of https://rg3.github.io/youtube-dl/supportedsites.html
-
-👉 Upload as file from any HTTP link
+More Commands
+More interactive 
 
 ### Installation
 
@@ -37,11 +40,8 @@ python bot.py
 
 ## Credits, and Thanks to
 
+* Me itself
 * [@SpEcHlDe](https://telegram.dog/ThankTelegram) for his [AnyDLBot](https://telegram.dog/AnyDLBot)
-* [Dan Tès](https://telegram.dog/haskell) for his [Pyrogram Library](https://github.com/pyrogram/pyrogram)
-* [Yoily](https://telegram.dog/YoilyL) for his [UploaditBot](https://telegram.dog/UploaditBot)
-
-- For FeedBack and Suggestions, please feel free to say in [InFoTel Group](https://telegram.dog/InFoTelGroup)
 
 #### LICENSE
 - GPLv3

@@ -35,18 +35,26 @@ URL | filename | username | password"""
 Telegram ID: <code>{}</code>
 Plan name: Hyper Peru User
 Expires on: 31/12/2069"""
-    HELP_USER = """Hai am URL Uploader bot..
+    HELP_USER = """Hi iam a URL Uploader Bot by @v_m_7_0_3
     
-1. Send url (Link|New Name with Extension).
-2. Send Custom Thumbnail (Optional).
-3. Select the button.
+•• Use /upload command with link to Upload URL.
+
+•• Use can use any picture as Thumbnail.
+   Send picture and reply that with /generatecustomthumbnail for using custom thumbnail.
+   Use /deletethumbnail to delete the saved thumbnail.
+
+•• You can download youtube videos by giving link. It will automatically download.
+   Choose the quality u needed as in button
+
+•• BUTTONS INFO
    SVideo - Give File as video with Screenshots
    DFile  - Give File with Screenshots
    Video  - Give File as video without Screenshots
    DFile  - Give File without Screenshots
 
---------
-Send /me to know current plan details"""
+-------------------------------------
+Send /me to know current plan details
+And BTW How is the bot 😊"""
     REPLY_TO_DOC_GET_LINK = "Reply to a Telegram media to get High Speed Direct Download Link"
     REPLY_TO_DOC_FOR_C2V = "Reply to a Telegram media to convert"
     REPLY_TO_DOC_FOR_SCSS = "Reply to a Telegram media to get screenshots"

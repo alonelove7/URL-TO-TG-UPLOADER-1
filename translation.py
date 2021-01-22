@@ -31,28 +31,34 @@ URL | filename | username | password"""
     NO_VOID_FORMAT_FOUND = "ERROR...\n<b>YouTubeDL</b> said: {}"
     USER_ADDED_TO_DB = "User <a href='tg://user?id={}'>{}</a> added to {} till {}."
     CURENT_PLAN_DETAILS = """Current plan details
---------
+•••••••••••••••••••••••••••••••
 Telegram ID: <code>{}</code>
 Plan name: Hyper Peru User
-Expires on: 31/12/2069"""
+Expires on: 31/12/2069
+•••••••••••••••••••••••••••••••"""
     HELP_USER = """Hi iam a URL Uploader Bot by @v_m_7_0_3
     
-•• Use /upload command with link to Upload URL.
+•••
+Use /upload command with link to Upload URL.
 
-•• Use can use any picture as Thumbnail.
-   Send picture and reply that with /generatecustomthumbnail for using custom thumbnail.
-   Use /deletethumbnail to delete the saved thumbnail.
+•••
+Use can use any picture as Thumbnail.
+Send picture and reply that with /generatecustomthumbnail for using custom thumbnail.
+Use /deletethumbnail to delete the saved thumbnail.
 
-•• You can download youtube videos by giving link. It will automatically download.
-   Choose the quality u needed as in button
+•••
+You can download youtube videos by giving link. It will automatically download.
+Choose the quality u needed as in button
 
-•• BUTTONS INFO
-   SVideo - Give File as video with Screenshots
-   DFile  - Give File with Screenshots
-   Video  - Give File as video without Screenshots
-   DFile  - Give File without Screenshots
+•••
+BUTTONS INFO :-
 
--------------------------------------
+SVideo - Give File as video with Screenshots
+DFile  - Give File with Screenshots
+Video  - Give File as video without Screenshots
+DFile  - Give File without Screenshots
+
+----------------------------------------------------
 Send /me to know current plan details
 And BTW How is the bot 😊"""
     REPLY_TO_DOC_GET_LINK = "Reply to a Telegram media to get High Speed Direct Download Link"

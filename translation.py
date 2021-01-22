@@ -58,6 +58,9 @@ DFile  - Give File with Screenshots
 Video  - Give File as video without Screenshots
 DFile  - Give File without Screenshots
 
+•••
+Use /commands for all commands list
+
 ----------------------------------------------------
 Send /me to know current plan details
 And BTW How is the bot 😊"""

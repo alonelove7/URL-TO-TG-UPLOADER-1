@@ -51,6 +51,9 @@ You can download youtube videos by giving link. It will automatically download.
 Choose the quality u needed as in button
 
 •••
+Rename any file and reupload. EXAMPLE :- /rename file_name.extension
+
+•••
 BUTTONS INFO :-
 
 SVideo - Give File as video with Screenshots

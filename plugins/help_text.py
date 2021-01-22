@@ -44,7 +44,7 @@ async def help_user(bot, update):
     )
 
 
-@pyrogram.Client.on_message(pyrogram.Filters.command(["me", "me@@xploaderzxbot"]))
+@pyrogram.Client.on_message(pyrogram.Filters.command(["me", "me@xploaderzxbot"]))
 async def get_me_info(bot, update):
     # logger.info(update)
     TRChatBase(update.from_user.id, update.text, "/me")

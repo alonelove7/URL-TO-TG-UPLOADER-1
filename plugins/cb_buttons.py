@@ -39,7 +39,7 @@ from PIL import Image
 
 
 @pyrogram.Client.on_callback_query()
-async def button(bot, update):
+async def ping(bot, update):
     if update_channel:
         try:
             if update.from_user.id in Config.BANNED_USERS:

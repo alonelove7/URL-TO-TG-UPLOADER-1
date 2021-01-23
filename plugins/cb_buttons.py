@@ -38,8 +38,12 @@ from PIL import Image
 
 
 @pyrogram.Client.on_callback_query()
-update_channel = Config.UPDATE_CHANNEL
-        if update_channel:
+        if update.from_user.id in Config.BANNED_USERS:
+        await update.reply_text("You are B A N N E D 🤣🤣🤣🤣")
+        return
+    TRChatBase(update.from_user.id, update.text, "/echo")
+    update_channel = Config.UPDATE_CHANNEL
+    if update_channel:
         try:
             user = await bot.get_chat_member(update_channel, update.chat.id)
             if user.status == "kicked":
@@ -61,6 +65,7 @@ async def button(bot, update):
             message_ids=update.message.message_id,
             revoke=True
         )
+          return
     # logger.info(update)
     cb_data = update.data
     if ":" in cb_data:

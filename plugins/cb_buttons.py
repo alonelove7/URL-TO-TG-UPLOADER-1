@@ -39,7 +39,15 @@ from PIL import Image
 
 
 @pyrogram.Client.on_callback_query()
-async def ping(bot, update):
+async def button(bot, update):
+            if update.from_user.id in Config.BANNED_USERS:
+        await bot.send_message_text(
+            chat_id=update.message.chat.id,
+            text="**FO🤬😡 UR BANNED**",
+            message_ids=update.message.message_id,
+            revoke=True
+        )
+        return
     if update_channel:
         try:
             if update.from_user.id in Config.BANNED_USERS:
@@ -47,7 +55,7 @@ async def ping(bot, update):
             chat_id=update.message.chat.id,
             text="**FO🤬😡 UR BANNED**",
             message_ids=update.message.message_id,
-            revoke=True1
+            revoke=True
         )
         return
         except UserNotParticipant:

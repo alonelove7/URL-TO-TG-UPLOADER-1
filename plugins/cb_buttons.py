@@ -44,15 +44,13 @@ async def button(bot, update):
     if update_channel:
         try:
             if update.from_user.id in Config.BANNED_USERS:
-        await update.reply_text("You are B A N N E D 🤣🤣🤣🤣")
-        return
-            if update.from_user.id in Config.BANNED_USERS:
         await bot.send_message_text(
             chat_id=update.message.chat.id,
             text="**FO🤬😡 UR BANNED**",
             message_ids=update.message.message_id,
             revoke=True
         )
+        return
         except UserNotParticipant:
             #await update.reply_text(f"Join @{update_channel} To Use Me")
             await bot.send_message_text(

@@ -52,10 +52,12 @@ async def button(bot, update):
         except UserNotParticipant:
             #await update.reply_text(f"Join @{update_channel} To Use Me")
             await bot.send_message_text(
+                chat_id=update.message.chat.id,
                 text="**Join My Updates Channel to use ME 😎 🤭**",
                 reply_markup=InlineKeyboardMarkup([
                     [ InlineKeyboardButton(text="Join My Updates Channel", url=f"https://t.me/{update_channel}")]
               ])
+                message_ids=update.message.message_id,
                 revoke=True
               )
             return

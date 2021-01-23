@@ -56,10 +56,6 @@ async def echo(bot, update):
                     [ InlineKeyboardButton(text="Join My Updates Channel", url=f"https://t.me/{update_channel}")]
               ])
             )
-            return
-        except Exception:
-            await update.reply_text("Something Wrong. Contact my Support Group")
-            return
     logger.info(update.from_user)
     url = update.text
     youtube_dl_username = None

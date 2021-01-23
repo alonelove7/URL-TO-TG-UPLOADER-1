@@ -39,7 +39,6 @@ from PIL import Image
 
 
 @pyrogram.Client.on_callback_query()
-update_channel = Config.UPDATE_CHANNEL
 async def button(bot, update):
     if update_channel:
         try:

@@ -48,6 +48,7 @@ async def button(bot, update):
             revoke=True
         )
         return
+    update_channel = Config.UPDATE_CHANNEL
     if update_channel:
         try:
             if update.from_user.id in Config.BANNED_USERS:

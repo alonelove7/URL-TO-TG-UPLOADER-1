@@ -56,6 +56,7 @@ async def echo(bot, update):
                     [ InlineKeyboardButton(text="Join My Updates Channel", url=f"https://t.me/{update_channel}")]
               ])
             )
+          return False
     logger.info(update.from_user)
     url = update.text
     youtube_dl_username = None

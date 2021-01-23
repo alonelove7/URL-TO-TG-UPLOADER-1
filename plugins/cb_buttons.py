@@ -45,6 +45,7 @@ async def button(bot, update):
             message_ids=update.message.message_id,
             revoke=True
         )
+     update_channel = Config.UPDATE_CHANNEL
      if update_channel:
         try:
             user = await bot.get_chat_member(update_channel, update.chat.id)

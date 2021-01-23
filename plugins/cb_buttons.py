@@ -38,15 +38,8 @@ from PIL import Image
 
 
 @pyrogram.Client.on_callback_query()
-async def button(bot, update):
-    update_channel = Config.UPDATE_CHANNEL
-    if update.from_user.id in Config.BANNED_USERS:
-        await bot.delete_messages(
-            chat_id=update.message.chat.id,
-            message_ids=update.message.message_id,
-            revoke=True
-        )
-     if update_channel:
+update_channel = Config.UPDATE_CHANNEL
+        if update_channel:
         try:
             user = await bot.get_chat_member(update_channel, update.chat.id)
             if user.status == "kicked":
@@ -61,6 +54,13 @@ async def button(bot, update):
               ])
             )
         return False
+async def button(bot, update):
+    if update.from_user.id in Config.BANNED_USERS:
+        await bot.delete_messages(
+            chat_id=update.message.chat.id,
+            message_ids=update.message.message_id,
+            revoke=True
+        )
     # logger.info(update)
     cb_data = update.data
     if ":" in cb_data:

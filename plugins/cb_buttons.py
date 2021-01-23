@@ -58,7 +58,7 @@ async def button(bot, update):
                     [ InlineKeyboardButton(text="Join My Updates Channel", url=f"https://t.me/{update_channel}")]
               ])
             )
-          return False
+          return
     # logger.info(update)
     cb_data = update.data
     if ":" in cb_data:

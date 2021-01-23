@@ -37,15 +37,15 @@ from hachoir.parser import createParser
 from PIL import Image
 
 
-@pyrogram.Client.on_callback_query(bot, update):
+@pyrogram.Client.on_callback_query()
 async def button(bot, update):
+    update_channel = Config.UPDATE_CHANNEL
     if update.from_user.id in Config.BANNED_USERS:
         await bot.delete_messages(
             chat_id=update.message.chat.id,
             message_ids=update.message.message_id,
             revoke=True
         )
-     update_channel = Config.UPDATE_CHANNEL
      if update_channel:
         try:
             user = await bot.get_chat_member(update_channel, update.chat.id)

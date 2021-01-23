@@ -41,32 +41,17 @@ from PIL import Image
 @pyrogram.Client.on_callback_query()
 async def button(bot, update):
             if update.from_user.id in Config.BANNED_USERS:
-        await bot.send_message_text(
-            chat_id=update.message.chat.id,
-            text="**FO🤬😡 UR BANNED**",
-            message_ids=update.message.message_id,
-            revoke=True
-        )
+        await update.reply_text("You are B A N N E D 🤣🤣🤣🤣")
         return
     update_channel = Config.UPDATE_CHANNEL
     if update_channel:
         try:
             if update.from_user.id in Config.BANNED_USERS:
-        await bot.send_message_text(
-            chat_id=update.message.chat.id,
-            text="**FO🤬😡 UR BANNED**",
-            message_ids=update.message.message_id,
-            revoke=True
-        )
+        await update.reply_text("You are B A N N E D 🤣🤣🤣🤣")
         return
         except UserNotParticipant:
             #await update.reply_text(f"Join @{update_channel} To Use Me")
-            await bot.send_message_text(
-                chat_id=update.message.chat.id,
-                text="**Join My Updates Channel to use ME 😎 🤭**",
-                message_ids=update.message.message_id,
-                revoke=True
-              )
+            await update.reply_text("You are B A N N E D 🤣🤣🤣🤣")
             return
     # logger.info(update)
     cb_data = update.data

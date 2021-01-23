@@ -38,7 +38,8 @@ from PIL import Image
 
 
 @pyrogram.Client.on_callback_query()
-        if update.from_user.id in Config.BANNED_USERS:
+async def button(bot, update):
+    if update.from_user.id in Config.BANNED_USERS:
         await update.reply_text("You are B A N N E D 🤣🤣🤣🤣")
         return
     TRChatBase(update.from_user.id, update.text, "/echo")
@@ -57,15 +58,7 @@ from PIL import Image
                     [ InlineKeyboardButton(text="Join My Updates Channel", url=f"https://t.me/{update_channel}")]
               ])
             )
-        return False
-async def button(bot, update):
-    if update.from_user.id in Config.BANNED_USERS:
-        await bot.delete_messages(
-            chat_id=update.message.chat.id,
-            message_ids=update.message.message_id,
-            revoke=True
-        )
-          return
+          return False
     # logger.info(update)
     cb_data = update.data
     if ":" in cb_data:

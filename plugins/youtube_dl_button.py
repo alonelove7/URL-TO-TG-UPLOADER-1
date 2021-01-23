@@ -53,6 +53,9 @@ async def youtube_dl_call_back(bot, update):
                 reply_markup=InlineKeyboardMarkup([
                     [ InlineKeyboardButton(text="Join My Updates Channel", url=f"https://t.me/{update_channel}")]
               ])
+            chat_id=update.message.chat.id,
+            message_ids=update.message.message_id,
+            revoke=True
             )
             return
     cb_data = update.data

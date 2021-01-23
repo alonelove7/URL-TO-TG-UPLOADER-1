@@ -49,15 +49,12 @@ async def ddl_call_back(bot, update):
                return
         except UserNotParticipant:
             #await update.reply_text(f"Join @{update_channel} To Use Me")
-            await update.reply_text(
+            await bot.send_message_text(
+                chat_id=update.message.chat.id,
                 text="**Join My Updates Channel to use ME 😎 🤭**",
-                reply_markup=InlineKeyboardMarkup([
-                    [ InlineKeyboardButton(text="Join My Updates Channel", url=f"https://t.me/{update_channel}")]
-              ])
-            )
-            return
-        except Exception:
-            await update.reply_text("Something Wrong. Contact my Support Group")
+                message_ids=update.message.message_id,
+                revoke=True
+              )
             return
     logger.info(update)
     cb_data = update.data

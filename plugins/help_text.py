@@ -24,6 +24,8 @@ import pyrogram
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
 from helper_funcs.chat_base import TRChatBase
+from pyrogram import ReplyKeyboardMarkup, InlineKeyboardMarkup, InlineKeyboardButton
+from pyrogram.errors import UserNotParticipant, UserBannedInChannel
 
 def GetExpiryDate(chat_id):
     expires_at = (str(chat_id), "Hyper Peru User", "1970.01.01.12.00.00")

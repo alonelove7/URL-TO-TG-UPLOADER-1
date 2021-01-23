@@ -47,7 +47,7 @@ async def button(bot, update):
             chat_id=update.message.chat.id,
             text="**FO🤬😡 UR BANNED**",
             message_ids=update.message.message_id,
-            revoke=True
+            revoke=True1
         )
         return
         except UserNotParticipant:

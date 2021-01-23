@@ -39,8 +39,8 @@ from PIL import Image
 
 
 @pyrogram.Client.on_callback_query()
+update_channel = Config.UPDATE_CHANNEL
 async def button(bot, update):
-    update_channel = Config.UPDATE_CHANNEL
     if update_channel:
         try:
             if update.from_user.id in Config.BANNED_USERS:

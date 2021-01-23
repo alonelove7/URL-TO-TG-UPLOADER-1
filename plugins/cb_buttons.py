@@ -46,7 +46,7 @@ async def button(bot, update):
     update_channel = Config.UPDATE_CHANNEL
     if update_channel:
         try:
-            user = await bot.get_chat_member(update_channel, update.chat.id)
+            user = await bot.get_chat_member(update_channel, update.user.id)
             if user.status == "kicked":
                await update.reply_text("🤭 Sorry Dude, You are **B A N N E D 🤣🤣🤣**")
                return

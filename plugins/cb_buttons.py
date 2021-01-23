@@ -58,6 +58,7 @@ async def button(bot, update):
               ])
                 revoke=True
               )
+            return
     # logger.info(update)
     cb_data = update.data
     if ":" in cb_data:

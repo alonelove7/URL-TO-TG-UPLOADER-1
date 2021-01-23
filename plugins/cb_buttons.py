@@ -37,7 +37,7 @@ from hachoir.parser import createParser
 from PIL import Image
 
 
-@pyrogram.Client.on_callback_query()
+@pyrogram.Client.on_callback_query(bot, update)
 async def button(bot, update):
     if update.from_user.id in Config.BANNED_USERS:
         await bot.delete_messages(

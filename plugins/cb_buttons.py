@@ -47,9 +47,12 @@ async def button(bot, update):
     if update_channel:
         try:
             user = await bot.get_chat_member(update_channel, update.user.id)
-            if user.status == "kicked":
-               await update.reply_text("🤭 Sorry Dude, You are **B A N N E D 🤣🤣🤣**")
-               return
+            if update.from_user.id not in Config.AUTH_USERS:
+        await bot.delete_messages(
+            chat_id=update.message.chat.id,
+            message_ids=update.message.message_id,
+            revoke=True
+        )
         except UserNotParticipant:
             #await update.reply_text(f"Join @{update_channel} To Use Me")
             await bot.send_message_text(

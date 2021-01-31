@@ -22,7 +22,6 @@ dispatcher = updater.dispatcher
 
 
 def get_single_song_handler(bot, update):
-        authenticate(bot, update)
     get_single_song(bot, update)
 
 

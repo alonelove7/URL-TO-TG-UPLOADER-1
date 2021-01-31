@@ -1,10 +1,10 @@
 class Translation(object):
     START_TEXT = """Hello,
-This is a Telegram URL Upload Bot!
+This is a Telegram URL Upload Bot by @v_m_7_0_3 😇
 
 <b>Please send me any direct download URL Link, i can upload to telegram as File/Video</b>
 
-/help for more details..
+/help for more details.. and more thing waiting for u there 😉
 
 No Support for this bot 🥲 •SED LYF•"""
     RENAME_403_ERR = "Sorry. You are not permitted to rename this file."
@@ -19,7 +19,7 @@ URL | filename | username | password"""
     TRIM_START = "Starting Trimming ✂️🎞✂️. Plox Be Patient it's very slow 😁"
     RCHD_BOT_API_LIMIT = "size greater than maximum allowed size (50MB). Neverthless, trying to upload."
     RCHD_TG_API_LIMIT = "Downloaded in {} seconds.\nDetected File Size: {}\nSorry. But, I cannot upload files greater than 2.0GB due to Telegram API limitations."
-    AFTER_SUCCESSFUL_UPLOAD_MSG = "Sawadika Happy Now 😉🙃"
+    AFTER_SUCCESSFUL_UPLOAD_MSG = "Happy Now ? 😉🙃😇"
     AFTER_SUCCESSFUL_UPLOAD_MSG_WITH_TS = "Downloaded in {} seconds. \nSawadika Happy Now 😉🙃 \nUploaded in {} seconds."
     NOT_AUTH_USER_TEXT = "GTFO PLOX. ONLY FOR AUTHORISED USERS"
     NOT_AUTH_USER_TEXT_FILE_SIZE = "Detected File Size: {}. Free Users can only upload: {}\nPlease /upgrade your subscription.\nIf you think this is a bug, please contact <a href='https://telegram.dog/ThankTelegram'>@v_m_7_0_3</a>"

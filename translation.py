@@ -37,7 +37,7 @@ Telegram ID: <code>{}</code>
 Plan name: Hyper Peru User
 Expires on: 31/12/2069
 •••••••••••••••••••••••••••••••"""
-    HELP_USER = """Hi iam a URL Uploader Bot by @v_m_7_0_3
+    HELP_USER = """Hi iam a Xploader R Bot by @v_m_7_0_3
     
 •••
 Use /upload command with link to Upload URL.
@@ -61,7 +61,19 @@ You can unzip any file and download files inside it directly.(Multiple downloads
 You can generate screenshots of video(file type also) by replying /generatescss to file
 
 •••
-BUTTONS INFO :-
+For Trimming video
+Reply /downloadmedia to the video 
+Then use /trim HH:MM:SS HH'MM'SS to trim video
+Example - /trim 00:01:00 00:02:00
+After these delete the file using /clearmedia so that u can use other media next time.
+
+•••
+
+For Converting Video Files to Streamable Video
+Use /c_2_video as reply to the media
+
+•••
+COMMON BUTTONS INFO :-
 
 SVideo - Give File as video with Screenshots
 DFile  - Give File with Screenshots
@@ -73,7 +85,8 @@ Use /commands for all simple commands list
 
 ----------------------------------------------------
 Send /me to know current plan details
-And BTW How is the bot 😊"""
+Now what are u waiting for 😐🤨
+"""
     REPLY_TO_DOC_GET_LINK = "Reply to a Telegram media to get High Speed Direct Download Link"
     REPLY_TO_DOC_FOR_C2V = "Reply to a Telegram media to convert"
     REPLY_TO_DOC_FOR_SCSS = "Reply to a Telegram media to get screenshots"

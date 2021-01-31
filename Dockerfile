@@ -1,4 +1,4 @@
-FROM python:3.7-buster
+FROM python:3.8.7-buster
 WORKDIR /app
 RUN pip install python-telegram-bot==12.3.0
 RUN pip install spotdl==3.1.2

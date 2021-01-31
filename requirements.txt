@@ -9,3 +9,5 @@ requests
 tgcrypto
 youtube-dl
 olefile
+python-telegram-bot==12.3.0
+spotdl==3.1.2

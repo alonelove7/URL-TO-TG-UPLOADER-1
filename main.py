@@ -20,7 +20,7 @@ def update_config():
 updater = Updater(config["TOKEN"])
 dispatcher = updater.dispatcher
 
-
+@Client.on_message(Filters.command(["spdl", "spdl@xploaderzxbot"]))
 def get_single_song_handler(bot, update):
     if config["AUTH"]["ENABLE"]:
         authenticate(bot, update)

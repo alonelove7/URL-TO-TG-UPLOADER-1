@@ -163,9 +163,9 @@ async def storage_info(bot, update):
         )
 
 
-@pyrogram.Client.on_message(pyrogram.Filters.command(["clearffmpegmedia"]))
+@pyrogram.Client.on_message(pyrogram.Filters.command(["clearmedia", "clearmedia@xploaderzxbot"]))
 async def clear_media(bot, update):
-    TRChatBase(update.from_user.id, update.text, "clearmedia", "clearmedia@xploaderzxbot")
+    TRChatBase(update.from_user.id, update.text, "clearffmpegmedia")
     saved_file_path = Config.DOWNLOAD_LOCATION + "/" + str(update.from_user.id) + ".FFMpegRoBot.mkv"
     if os.path.exists(saved_file_path):
         os.remove(saved_file_path)

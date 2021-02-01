@@ -9,5 +9,3 @@ requests
 tgcrypto
 youtube-dl
 olefile
-selenium
-validators

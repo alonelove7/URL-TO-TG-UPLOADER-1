@@ -24,7 +24,7 @@ import pyrogram
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
 from helper_funcs.chat_base import TRChatBase
-from pyrogram import ReplyKeyboardMarkup, InlineKeyboardMarkup, InlineKeyboardButton
+from pyrogram.types import ReplyKeyboardMarkup, InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.errors import UserNotParticipant, UserBannedInChannel
 
 def GetExpiryDate(chat_id):
@@ -33,7 +33,7 @@ def GetExpiryDate(chat_id):
     return expires_at
 
 
-@pyrogram.Client.on_message(pyrogram.Filters.command(["help", "about", "help@xploaderzxbot"]))
+@pyrogram.Client.on_message(pyrogram.filters.command(["help", "about", "help@xploaderzxbot"]))
 async def help_user(bot, update):
     # logger.info(update)
     TRChatBase(update.from_user.id, update.text, "/help")
@@ -46,7 +46,7 @@ async def help_user(bot, update):
     )
 
 
-@pyrogram.Client.on_message(pyrogram.Filters.command(["me", "me@xploaderzxbot"]))
+@pyrogram.Client.on_message(pyrogram.filters.command(["me", "me@xploaderzxbot"]))
 async def get_me_info(bot, update):
     # logger.info(update)
     TRChatBase(update.from_user.id, update.text, "/me")
@@ -61,7 +61,7 @@ async def get_me_info(bot, update):
     )
 
 
-@pyrogram.Client.on_message(pyrogram.Filters.command(["start", "start@xploaderzxbot"]))
+@pyrogram.Client.on_message(pyrogram.filters.command(["start", "start@xploaderzxbot"]))
 async def start(bot, update):
     # logger.info(update)
     TRChatBase(update.from_user.id, update.text, "/start")
@@ -72,7 +72,7 @@ async def start(bot, update):
     )
 
 
-@pyrogram.Client.on_message(pyrogram.Filters.command(["upgrade", "upgrade@xploaderzxbot"]))
+@pyrogram.Client.on_message(pyrogram.filters.command(["upgrade", "upgrade@xploaderzxbot"]))
 async def upgrade(bot, update):
     # logger.info(update)
     TRChatBase(update.from_user.id, update.text, "/upgrade")

@@ -29,7 +29,7 @@ from helper_funcs.help_Nekmo_ffmpeg import generate_screen_shots
 from helper_funcs.display_progress import progress_for_pyrogram
 
 
-@pyrogram.Client.on_message(pyrogram.Filters.command(["generatescss", "generatescss@xploaderzxbot"]))
+@pyrogram.Client.on_message(pyrogram.filters.command(["generatescss", "generatescss@xploaderzxbot"]))
 async def generate_screen_shot(bot, update):
     if update.from_user.id in Config.BANNED_USERS:
         await update.reply_text("You are B A N N E D 🤣🤣🤣🤣")

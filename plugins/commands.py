@@ -1,7 +1,7 @@
 import time
 import asyncio
 from datetime import datetime
-from pyrogram import Client, Filters
+from pyrogram import Client, filters
 
 
 @Client.on_message(filters.command(["commands", "commands@xploaderzxbot"]))

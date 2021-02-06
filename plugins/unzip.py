@@ -29,7 +29,7 @@ from helper_funcs.chat_base import TRChatBase
 from helper_funcs.display_progress import progress_for_pyrogram, humanbytes
 
 
-@pyrogram.Client.on_message(pyrogram.Filters.command(["unzip", "unzip@xploaderzxbot"]))
+@pyrogram.Client.on_message(pyrogram.filters.command(["unzip", "unzip@xploaderzxbot"]))
 async def unzip(bot, update):
     if update.from_user.id in Config.BANNED_USERS:
         await update.reply_text("You are B A N N E D 🤣🤣🤣🤣")
@@ -116,7 +116,7 @@ async def unzip(bot, update):
                 for current_file in zip_file_contents:
                     cb_string = "ZIP:{}:ZIP".format(str(i))
                     inline_keyboard.append([
-                        pyrogram.InlineKeyboardButton(
+                        InlineKeyboardButton(
                             current_file,
                             callback_data=cb_string.encode("UTF-8")
                         )
@@ -124,14 +124,14 @@ async def unzip(bot, update):
                     i = i + 1
                 cb_string = "ZIP:{}:ZIP".format("ALL")
                 inline_keyboard.append([
-                    pyrogram.InlineKeyboardButton(
+                    InlineKeyboardButton(
                         "Upload All Files",
                         callback_data=cb_string.encode("UTF-8")
                     )
                 ])
                 cb_string = "ZIP:{}:ZIP".format("NONE")
                 inline_keyboard.append([
-                    pyrogram.InlineKeyboardButton(
+                    InlineKeyboardButton(
                         "Cancel",
                         callback_data=cb_string.encode("UTF-8")
                     )

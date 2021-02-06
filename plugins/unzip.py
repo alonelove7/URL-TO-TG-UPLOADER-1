@@ -28,6 +28,8 @@ logging.getLogger("pyrogram").setLevel(logging.WARNING)
 from helper_funcs.chat_base import TRChatBase
 from helper_funcs.display_progress import progress_for_pyrogram, humanbytes
 
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+
 
 @pyrogram.Client.on_message(pyrogram.filters.command(["unzip", "unzip@xploaderzxbot"]))
 async def unzip(bot, update):

@@ -138,7 +138,7 @@ async def unzip(bot, update):
                         callback_data=cb_string.encode("UTF-8")
                     )
                 ])
-                reply_markup = pyrogram.InlineKeyboardMarkup(inline_keyboard)
+                reply_markup = InlineKeyboardMarkup(inline_keyboard)
                 await bot.edit_message_text(
                     chat_id=update.chat.id,
                     text=Translation.EXTRACT_ZIP_STEP_TWO,

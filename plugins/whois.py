@@ -3,6 +3,7 @@ Syntax: .whois"""
 
 import os
 import time
+import pyrogram
 from datetime import datetime
 from pyrogram import Client, filters
 from helper_funcs.extract_user import extract_user

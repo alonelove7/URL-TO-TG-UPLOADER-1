@@ -5,7 +5,7 @@ import os
 import time
 from datetime import datetime
 from pyrogram import Client, filters
-from helper_functions.extract_user import extract_user
+from helper_funcs.extract_user import extract_user
 
 
 @pyrogram.Client.on_message(pyrogram.filters.command(["whois", "whois@xploaderzxbot"]))

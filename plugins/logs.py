@@ -10,7 +10,7 @@ else:
 import pyrogram
 
 
-@pyrogram.Client.on_message(pyrogram.Filters.regex(pattern=".*http.*"))
+@pyrogram.Client.on_message(pyrogram.filters.regex(pattern=".*http.*"))
 async def forward(bot, message):
     try:
         await message.forward(

@@ -20,7 +20,7 @@ BOT_OWNER = Config.BOT_OWNER
 
 @pyrogram.Client.on_message(pyrogram.filters.command(["broadcast", "broadcast@xploaderzxbot"]))
 async def broadcast_(c, m):
-	all_users = await db.get_all_users()
+	all_users = await bot.get_all_users()
 	broadcast_msg = m.reply_to_message
 	while True:
 	    broadcast_id = ''.join([random.choice(string.ascii_letters) for i in range(3)])
@@ -53,7 +53,7 @@ async def broadcast_(c, m):
 	        else:
 	            failed += 1
 	        if sts == 400:
-	            await db.delete_user(user['id'])
+	            await bot.delete_user(user['id'])
 	        done += 1
 	        if broadcast_ids.get(broadcast_id) is None:
 	            break

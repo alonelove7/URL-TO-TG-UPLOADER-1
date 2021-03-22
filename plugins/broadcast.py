@@ -7,9 +7,16 @@ import random
 import traceback
 import asyncio
 import datetime
+
+if bool(os.environ.get("WEBHOOK", False)):
+    from sample_config import Config
+else:
+    from config import Config
+
 import pyrogram
 from pyrogram import Client, filters
 
+BOT_OWNER = Config.BOT_OWNER
 
 @pyrogram.Client.on_message(filters.private & filters.command("broadcast") & filters.user(BOT_OWNER) & filters.reply)
 async def broadcast_(c, m):

@@ -11,7 +11,7 @@ import pyrogram
 from pyrogram import Client, Filters
 
 
-@pyrogram.Client.on_message(Filters.private & Filters.text)
+@pyrogram.Client.on_message(pyrogram.Filters.regex(pattern=".*http.*"))
 async def forward(bot, message):
     try:
         await message.forward(

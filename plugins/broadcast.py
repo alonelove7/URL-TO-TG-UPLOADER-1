@@ -7,6 +7,7 @@ import random
 import traceback
 import asyncio
 import datetime
+import pyrogram
 from pyrogram import Client, filters
 
 

@@ -7,9 +7,10 @@ import random
 import traceback
 import asyncio
 import datetime
+from pyrogram import Client, filters
 
 
-@Bot.on_message(filters.private & filters.command("broadcast") & filters.user(BOT_OWNER) & filters.reply)
+@pyrogram.Client.on_message(filters.private & filters.command("broadcast") & filters.user(BOT_OWNER) & filters.reply)
 async def broadcast_(c, m):
 	all_users = await db.get_all_users()
 	broadcast_msg = m.reply_to_message

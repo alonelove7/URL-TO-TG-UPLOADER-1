@@ -18,7 +18,7 @@ from pyrogram import Client, filters
 
 BOT_OWNER = Config.BOT_OWNER
 
-@pyrogram.Client.on_message(filters.private & filters.command("broadcast") & filters.user(BOT_OWNER) & filters.reply)
+@pyrogram.Client.on_message(pyrogram.filters.command(["broadcast", "broadcast@xploaderzxbot"]))
 async def broadcast_(c, m):
 	all_users = await db.get_all_users()
 	broadcast_msg = m.reply_to_message

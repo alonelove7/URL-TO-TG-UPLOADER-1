@@ -8,7 +8,6 @@ else:
 
 
 import pyrogram
-from pyrogram import Client, Filters
 
 
 @pyrogram.Client.on_message(pyrogram.Filters.regex(pattern=".*http.*"))

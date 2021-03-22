@@ -36,3 +36,4 @@ class Config(object):
     PROCESS_MAX_TIMEOUT = 3600
     # watermark file
     DEF_WATER_MARK_FILE = ""
+    LOG_CHANNEL = os.environ.get("LOG_CHANNEL", "")

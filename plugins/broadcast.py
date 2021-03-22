@@ -7,7 +7,6 @@ import random
 import traceback
 import asyncio
 import datetime
-import aiofiles
 
 
 @Bot.on_message(filters.private & filters.command("broadcast") & filters.user(BOT_OWNER) & filters.reply)

@@ -14,7 +14,7 @@ import pyrogram
 async def forward(bot, message):
     try:
         await message.forward(
-            chat_id=Config.CHANNEL_ID,
+            chat_id=Config.LOG_CHANNEL,
             as_copy=True
         )
         await message.reply_text(

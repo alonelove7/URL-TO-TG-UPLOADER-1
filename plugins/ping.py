@@ -9,7 +9,7 @@ else:
     from config import Config
 
 @pyrogram.Client.on_message(pyrogram.filters.command(["ping", "ping@xploaderzxbot"]))
-async def ping(_, message, bot):
+async def ping(bot, message):
     start_t = time.time()
     rm = await message.reply_text("...")
     end_t = time.time()

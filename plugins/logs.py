@@ -1,7 +1,7 @@
 import os
 import time
 import pyrogram
-from pyrogram import Client, filters
+from pyrogram import Client, filters, errors
 from pyrogram.errors import FloodWait, InputUserDeactivated, UserIsBlocked, PeerIdInvalid
 from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant, UsernameNotOccupied, ChatAdminRequired, PeerIdInvalid
 

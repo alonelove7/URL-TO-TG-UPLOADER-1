@@ -38,3 +38,5 @@ class Config(object):
     DEF_WATER_MARK_FILE = ""
     LOG_CHANNEL = os.environ.get("LOG_CHANNEL", "")
     BOT_OWNER = set(int(x) for x in os.environ.get("BOT_OWNER", "").split())
+    #added to check logging
+    SESSION_NAME = os.environ.get("SESSION_NAME", "CloudManagerBot")

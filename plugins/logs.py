@@ -2,6 +2,7 @@ import os
 import time
 import pyrogram
 from pyrogram import Client, filters
+from pyrogram.errors import FloodWait, InputUserDeactivated, UserIsBlocked, PeerIdInvalid
 from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant, UsernameNotOccupied, ChatAdminRequired, PeerIdInvalid
 
 if bool(os.environ.get("WEBHOOK", False)):

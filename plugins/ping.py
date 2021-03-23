@@ -8,7 +8,7 @@ if bool(os.environ.get("WEBHOOK", False)):
 else:
     from config import Config
     
-Bot = Client(Config.SESSION_NAME, bot_token=Config.BOT_TOKEN, api_id=Config.API_ID, api_hash=Config.API_HASH)    
+Bot = Client(Config.SESSION_NAME, bot_token=Config.TG_BOT_TOKEN, api_id=Config.APP_ID, api_hash=Config.API_HASH)    
 
 @pyrogram.Client.on_message(pyrogram.filters.command(["ping", "ping@xploaderzxbot"]))
 async def ping(bot, message):
